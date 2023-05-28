@@ -1,0 +1,25 @@
+
+    body {
+        background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, hsla(275, 66%, 13%, 0.651), hsla(350, 81%, 42%, 0.699)), url(../imagenes/celulares2.jpg) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        ;  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, hsla(275, 66%, 13%, 0.651), hsla(350, 81%, 42%, 0.699)), url(../imagenes/celulares2.jpg) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    h1{
+        color: #050505;
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgba(145, 255, 0, 0.301);
+       font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    
+       .mapa {
+        display: flex;
+        justify-content: center;
+
+    }

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="icon" href="../imagenes/conectados.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/f3266c7640.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<header>
+    <nav>
+        
+        <a href="../index.html">INICIO</a> 
+        <a href="../pages/location.html">SUCURSALES</a>
+        
+    </nav>
+
+    <section class="textos-header">
+        <h1>Dejanos tus datos y te contactamos</h1>
+    </section>
+
+    <div class="ola" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff;"></path>
+    </svg></div>
+</header>
+
+<body>
+    <main>                
+        <fieldset>
+            <legend class="titulo"><b> Datos Personales</b></legend>
+                
+            <form class="formulario" id="formulario">
+            
+                <div class="formulario__grupo formulario__grupo-incorrecto" id="grupo__apellido">
+                    <label for="apellido" class="formulario__label">Apellido: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="apellido" class="formulario__input" id="apellido" placeholder="Ingrese su apellido aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark" aria-hidden="true"></i>   
+                    </div>
+                    <p class="formulario__input-error">El apellido sólo puede contener letras</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="nombre" class="formulario__input" id="nombre" placeholder="Ingrese su nombre aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>         
+                    </div>
+                    <p class="formulario__input-error">El nombre sólo puede contener letras</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="correo" class="formulario__input" id="correo" placeholder="ejemplo@correo.com">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>         
+                    </div>
+                    <p class="formulario__input-error">El correo sólo puede contener letras, números, puntos, guión y guión bajo</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__date">
+                    <label for="birthdate" class="formulario__label">Fecha de Nacimiento (mm/dd/yyyy): </label>
+                    <div>
+                        <input type= "date" name="birthdate" class="formulario__input">
+                    </div>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="telefono" class="formulario__input" id="telefono" maxlength="40" placeholder="Ingrese su teléfono aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>         
+                    </div>
+                    <p class="formulario__input-error">El teléfono sólo puede contener números</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__address">
+                    <label for="address" class="formulario__label">Dirección: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" name="address" class="formulario__input" id="address" placeholder="Ingrese su dirección aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>         
+                    </div>
+                    <p class="formulario__input-error">La dirección debe contener letras y números</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__zipcode">
+                    <label for="zipcode" class="formulario__label">Código Postal: </label>
+                    <div class="formulario__grupo-input">
+                        <input type="number" name="zipcode" class="formulario__input" id="zipcode" placeholder="Ingrese su código postal aquí...">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>         
+                    </div>
+                    <p class="formulario__input-error">El código postal debe contener sólo números</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__city">
+                    <label for="city" class="formulario__label">Localidad de residencia: </label>
+                    <br>
+                    <div class="formulario__grupo-input">
+                        <input type="radio" name="city" value="CABA"> CABA
+                        <input type="radio" name="city" value="GBA"> Gran Buenos Aires
+                        <input type="radio" name="city" value="resto"> Resto del País
+                    </div>
+                </div>
+        
+                <div class="formulario__grupo formulario__consulta"  id="grupo__consulta">
+                    <label for="consulta" class="formulario__label">Sobre qué temas podemos ayudarte: </label>
+                    <div>
+                        <input type="checkbox" name="consulta" value="celulares"> Celulares
+                        <input type="checkbox" name="consulta" value="tablet"> Tablets
+                        <input type="checkbox" name="consulta" value="accesorios"> Accesorios
+                        <input type="checkbox" name="consulta" value="servicio"> Servicio Técnico
+                        <input type="checkbox" name="consulta" value="otro"> Otro 
+                        <br>       
+                        <textarea name="mensaje" rows="6" cols="50" id="consulta" placeholder="Escribe aquí tu mensaje..."></textarea> 
+                            
+                    </div>
+             
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error:</b>Por favor rellena el formulario correctamente</p>
+                </div>                 
+                  
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+
+                </div>
+        
+            </form> <br>
+       
+        </fieldset>
+    </main>
+        <br>
+        <br>
+
+
+    <footer>
+        <div class="redsoc">
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <br>
+        
+        </div>
+        <br>
+        <br>
+        <p>Proyecto Codo a Codo</p>
+        <p>Derechos reservados &copy; 2023</p>
+        <br>
+    </footer>
+
+    <script src="../js/form.js">
+
+    </script>
+</body>
+</html>
